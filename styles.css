@@ -11,9 +11,9 @@
 
 #toggleButton {
     position: fixed;
-    top: 200px;
-    right: 10px;
-    padding: 15px 30px;
+    top: 400px;
+    right: 30px;
+    padding: px 50px;
     border: none;
     border-radius: 50px;
     font-size: 12px;
@@ -32,8 +32,8 @@
   
   #sun, #moon {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
   }
   
@@ -52,20 +52,22 @@
   
   #text-box {
     position: absolute;
-    width: 300px;
+    width: 600px;
     background-color: rgba(255, 255, 255, 0.5);
     color: black;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 15px;
     top: 20%;
     left: 20%;
     z-index: 1;
+    font-size: 42px;
   }
   
 
 /* ... Previous Styles ... */
 
 #sun {
+    
     opacity: 1; /* Initially visible */
     animation: moveUp 5s infinite; /* Initial animation */
   }
