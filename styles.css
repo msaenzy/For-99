@@ -1,16 +1,17 @@
 #body {
     transition: background-color 0.5s;
+    background-color: rgb(175, 214, 248);
   }
   
   #body.night {
-    background-color: #000;
+    background-color: #2e2e2e;
   }
   
   /* ... Previous Styles ... */
 
 #toggleButton {
     position: fixed;
-    top: 10px;
+    top: 0px;
     right: 10px;
     padding: 15px 30px;
     border: none;
@@ -60,14 +61,19 @@
     left: 20%;
     z-index: 1;
   }
-  /* ... Previous Styles ... */
   
 
-  /* ... Previous Styles ... */
+/* ... Previous Styles ... */
 
-#sun, #moon {
+#sun {
+    opacity: 1; /* Initially visible */
+    animation: moveUp 5s infinite; /* Initial animation */
+  }
+  
+  #moon {
     opacity: 0; /* Initially hidden */
   }
+  
   
   /* Add opacity to moveUp and moveDown animations */
   @keyframes moveUp {
@@ -76,7 +82,7 @@
   }
   
   @keyframes moveDown {
-    0%, 100% { bottom: -10%; opacity: 0; }
+    0%, 100% { bottom: 0%; opacity: 0; }
     50% { bottom: 50%; opacity: 1; }
   }
   
