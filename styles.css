@@ -11,7 +11,7 @@
 
 #toggleButton {
     position: fixed;
-    top: 0px;
+    top: 200px;
     right: 10px;
     padding: 15px 30px;
     border: none;
@@ -75,14 +75,14 @@
   }
   
   
-  /* Add opacity to moveUp and moveDown animations */
-  @keyframes moveUp {
+/* Add opacity to moveUp and moveDown animations */
+@keyframes moveUp {
     0%, 100% { bottom: 0; opacity: 0; }
-    50% { bottom: 60%; opacity: 1; }
+    50% { bottom: 80%; opacity: 1; }  /* Increase to 80% for higher movement */
   }
   
   @keyframes moveDown {
     0%, 100% { bottom: 0%; opacity: 0; }
-    50% { bottom: 50%; opacity: 1; }
+    50% { bottom: 70%; opacity: 1; }  /* Increase to 70% for higher movement */
   }
   
